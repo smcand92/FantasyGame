@@ -21,7 +21,8 @@ public class Cleric extends Character{
     }
 
     public void healCharacter(Character character){
-        character.getHealth() += tool.getHealingStrength();
+        int newCharacterHealth = character.getHealth() + tool.getHealingStrength();
+        character.setHealth(newCharacterHealth);
     }
 
 
