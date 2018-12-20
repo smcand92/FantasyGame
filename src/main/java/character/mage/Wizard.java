@@ -1,4 +1,5 @@
-package character;
+package character.mage;
 
 public class Wizard {
+
 }

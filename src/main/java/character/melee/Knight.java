@@ -1,4 +1,4 @@
-package character;
+package character.melee;
 
 public class Knight {
 }
