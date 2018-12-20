@@ -7,13 +7,15 @@ public abstract class Character {
     private int health;
     private int defense;
     private int pouch;
+    private String type;
 
-    public Character(String name, int attack, int health, int defense, int pouch) {
+    public Character(String name, int attack, int health, int defense, int pouch, String type) {
         this.name = name;
         this.attack = attack;
         this.health = health;
         this.defense = defense;
         this.pouch = pouch;
+        this.type = type;
     }
 
     public String getName() {

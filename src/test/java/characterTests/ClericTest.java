@@ -15,7 +15,7 @@ public class ClericTest {
     @Before
     public void before() {
         tool = new Tool("potion", 20);
-        cleric = new Cleric("Bob", 10, 100, 5, 0, tool);
+        cleric = new Cleric("Bob", 10, 100, 5, 0, tool, "cleric");
 
     }
 
@@ -24,11 +24,10 @@ public class ClericTest {
         assertEquals(tool, cleric.getHealingTool());
     }
 
-    @Test
-    public void setHealingTool() {
-    }
 
     @Test
     public void healCharacter() {
+        cleric.healCharacter(cleric);
+        assertEquals(120, cleric.getHealth());
     }
 }

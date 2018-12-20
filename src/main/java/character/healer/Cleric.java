@@ -7,8 +7,8 @@ public class Cleric extends Character{
 
     private Tool tool;
 
-    public Cleric(String name, int attack, int health, int defense, int pouch, Tool healingTool) {
-        super(name, attack, health, defense, pouch);
+    public Cleric(String name, int attack, int health, int defense, int pouch, Tool healingTool, String type) {
+        super(name, attack, health, defense, pouch, type);
         this.tool = healingTool;
     }
 
